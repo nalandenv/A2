@@ -1,4 +1,88 @@
-@import url(https://fonts.googleapis.com/css?family=Fenix:regular);
+@import url(https://fonts.googleapis.com/css?family=Sarabun:100,100italic,regular,italic,500,500italic);
 body{
-    background-color: beige;
+    font-family: 'Sarabun';
+    font-size: 1em;
+    background-color: rgb(100, 0, 75);
+}
+.container {
+    width: 60%;
+    background-color: rgb(100, 0, 75);
+    color: bisque;
+    border: bisque 3px solid;
+    border-radius: 5px;
+    margin: 70px auto;
+}
+.reg-btn{
+    background-color: bisque;
+    color: rgb(100, 0, 75);
+    font-size: 1em;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+.reg-btn:hover{
+    background-color: rgb(184, 163, 137);
+}
+.mini-container {
+    padding-top: 20px;
+    width: 85%;
+    margin: 0 auto;
+}
+header h1 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.form-element{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form-element input {
+    height: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.form-element select {
+    height: 35px;
+    font-size: 1rem;
+    border: none;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+.btn{
+    font-size: 1rem;
+    width: 70px;
+    height: 35px;
+    border: 1px solid bisque;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin: 10px 2px;
+}
+.btn:hover{
+    background-color: rgba(0,0,0,0.3)
+}
+.selected{
+    background-color: rgba(0,0,0,0.3)
+}
+.hidden{
+    display: none;
+}
+.error{
+    font-size: 0.8rem;
+    color: red;
+    margin-bottom: 0;
+}
+@media only screen and (max-width: 600px){
+    .container {
+        width: 80%;
+    }
 }

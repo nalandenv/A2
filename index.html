@@ -8,7 +8,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <div class="container">
+        <header class="mini-container">
+            <h1>Register Today</h1>
+            <span>Fill in the data below.</span>
+        </header>
+        <form class="form-group mini-container" action="#" onsubmit="event.preventDefault()">
+            <div class="form-element">
+                <input type="name" placeholder="Full Name" name="name">
+                <span id="name-err" class="error"></span>
+            </div>
+            <div class="form-element">
+                <input type="email" placeholder="E-mail Address" name="email">
+                <span id="email-err" class="error"></span>
+            </div>
+            <div class="form-element">
+                <select name="position" id="position">
+                    <option disabled selected value="">Position</option>
+                    <option value="jrDev">Junior Developer</option>
+                    <option value="srDev">Senior Developer</option>
+                    <option value="techLead">Tech Lead</option>
+                    <option value="manager">Manager</option>
+                    <option value="srManager">Senior Manager</option>
+                </select>
+                <span id="pos-err" class="error"></span>
+            </div>
+            <div class="form-element">
+                <input type="password" placeholder="Password" name="password">
+                <span id="pas-err" class="error"></span>
+            </div>
+            <div class="form-element">
+                <label for="gender">Gender:
+                    <label for="male">
+                        <input class="hidden" id="male" type="radio" name="gender" value="male">
+                        <span class="btn">MALE</span>
+                    </label>
+                    <label for="female">
+                        <input class="hidden" id="female" type="radio" name="gender" value="female">
+                        <span class="btn">FEMALE</span>
+                    </label>
+                    <label for="secret">
+                        <input class="hidden" id="secret" type="radio" name="gender" value="secret">
+                        <span class="btn">SECRET</span>
+                    </label>
+                </label>
+                <span class="error"></span>
+            </div>
+            <div class="form-element">
+                <label for="agree">
+                    <input type="checkbox" name="agree"> 
+                    I confirm that all data are correct.
+                </label>
+                <span class="error"></span>
+            </div>
+            <button id="reg-btn" class="reg-btn">Register</button>
+        </form>
+    </div>
 
     <script src="index.js"></script>
 </body>
